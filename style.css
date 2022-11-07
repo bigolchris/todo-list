@@ -4,18 +4,20 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
-  width: 360px;
+  display: flex;
+  justify-content: center;
 }
 
 #input {
-  width: 11em;
-  height: 1em;
-  border: 1px solid black;
-  outline: none;
-  font-size: 25px;
-  vertical-align: middle;
-  border-radius: 0.5em;
+  width: 12rem;
+  border-top: 1px solid black;
+  border-radius: 2em;
 }
 
 #addTo {
@@ -23,4 +25,17 @@ body {
   width: 2.2em;
   border: 1px solid black;
   border-radius: 0.5em;
+  vertical-align: middle;
+}
+
+.to-dos {
+  margin-top: 25px;
+}
+
+.listItem-styling {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  cursor: pointer;
+  font-size: 2em;
 }
