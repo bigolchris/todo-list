@@ -1,0 +1,26 @@
+html,
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 360px;
+}
+
+#input {
+  width: 11em;
+  height: 1em;
+  border: 1px solid black;
+  outline: none;
+  font-size: 25px;
+  vertical-align: middle;
+  border-radius: 0.5em;
+}
+
+#addTo {
+  height: 2.1em;
+  width: 2.2em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+}
