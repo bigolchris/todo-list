@@ -35,19 +35,28 @@ h1 {
 
 .listItem-styling {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 1em;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .newInput-styles {
   border-top: 1px solid black;
-  border-radius: 0.5em;
+  height: 1.5em;
+  border-radius: 0.9em;
 }
 
 .container-styles {
   width: 10em;
   height: 10em;
   border-top: 1px solid black;
+}
+
+.newBtn-styles {
+  height: 2em;
+  width: 2em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  vertical-align: middle;
 }
