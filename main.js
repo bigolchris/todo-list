@@ -2,6 +2,10 @@ let addToButton = document.getElementById("addTo");
 let toDoContainer = document.getElementById("todoContainer");
 let inputField = document.getElementById("input");
 
+let newToDoList = {
+  title: "",
+  todos: [""],
+};
 function createInput() {
   let toDoTitle = document.createElement("h3");
   let inputContainer = document.createElement("div");
@@ -18,6 +22,42 @@ function createInput() {
   inputButton.innerText = "+";
 
   toDoTitle.innerText = inputField.value;
+
+  inputContainer.className = "created-container";
+  toDoTitle.className = "created-title";
+  newInput.className = "created-input hide";
+  inputButton.className = "created-btn hide";
+
+  toDoTitle.addEventListener("click", () => {
+    if (
+      newInput.classList.contains("hide") &&
+      inputButton.classList.contains("hide")
+    ) {
+      inputContainer.style.left = -20 + "em";
+    } else {
+      inputContainer.style.left = -30 + "em";
+    }
+  });
+
+  toDoTitle.addEventListener("click", () => {
+    if (
+      newInput.classList.contains("hide") &&
+      inputButton.classList.contains("hide")
+    ) {
+      newInput.classList.remove("hide");
+      inputButton.classList.remove("hide");
+    } else {
+      newInput.classList.add("hide");
+      inputButton.classList.add("hide");
+    }
+
+    // newInput.classList.remove("hide");
+    // inputButton.classList.remove("hide");
+  });
+
+  toDoTitle.addEventListener("dblclick", () => {
+    inputContainer.remove();
+  });
 
   inputContainer.appendChild(toDoTitle);
   inputContainer.appendChild(newInput);
