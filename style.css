@@ -61,13 +61,27 @@ h1 {
   /* flex: 0; */
 }
 
+.created-btn {
+  width: 2em;
+  height: 1.5em;
+}
+
+.created-input {
+  width: 10em;
+  height: 1em;
+}
+
 .created-container {
-  top: 55em;
-  left: -30em;
+  border: 1px solid black;
+  width: 50vw;
+  justify-content: flex-end;
+  /* height: 70vh;  */
+  /* top: 55em;
+  left: -30em; */
   position: relative;
   /* bottom: 15vh; */
   margin-bottom: 0.5em;
-  /* display: flex; */
+  display: flex;
 }
 
 .hide {

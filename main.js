@@ -28,16 +28,16 @@ function createInput() {
   newInput.className = "created-input hide";
   inputButton.className = "created-btn hide";
 
-  toDoTitle.addEventListener("click", () => {
-    if (
-      newInput.classList.contains("hide") &&
-      inputButton.classList.contains("hide")
-    ) {
-      inputContainer.style.left = -20 + "em";
-    } else {
-      inputContainer.style.left = -30 + "em";
-    }
-  });
+  // toDoTitle.addEventListener("click", () => {
+  //   if (
+  //     newInput.classList.contains("hide") &&
+  //     inputButton.classList.contains("hide")
+  //   ) {
+  //     inputContainer.style.left = -20 + "em";
+  //   } else {
+  //     inputContainer.style.left = -30 + "em";
+  //   }
+  // });
 
   toDoTitle.addEventListener("click", () => {
     if (
