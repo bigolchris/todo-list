@@ -1,6 +1,7 @@
 let addToButton = document.getElementById("addTo");
 let toDoContainer = document.getElementById("todoContainer");
 let inputField = document.getElementById("input");
+let tagName = document.getElementsByClassName("listItem-styling");
 
 let newToDoList = {
   title: "",
@@ -28,6 +29,8 @@ function createInput() {
   newInput.className = "created-input hide";
   inputButton.className = "created-btn hide";
 
+  // let tagName = document.getElementsByTagName("p");
+
   // toDoTitle.addEventListener("click", () => {
   //   if (
   //     newInput.classList.contains("hide") &&
@@ -51,9 +54,18 @@ function createInput() {
       inputButton.classList.add("hide");
     }
 
+    if (
+      newInput.classList.contains("hide") &&
+      inputButton.classList.contains("hide")
+    ) {
+      tagName.classList = "hide";
+    }
+
     // newInput.classList.remove("hide");
     // inputButton.classList.remove("hide");
   });
+
+  console.log(tagName);
 
   toDoTitle.addEventListener("dblclick", () => {
     inputContainer.remove();
